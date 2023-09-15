@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridToolbarQuickFilter } from "@mui/x-data-grid";
 import data from "./response.json";
+import Footer from "./footer"
 
 let rows = data.documents.map((row, idx) => ({ ...row, id: idx }));
 
@@ -45,13 +46,14 @@ const columns = [
 
 export default function DataTable() {
     return (
+        <>
         <div style={{ minWidth: "100%", height: "100%"}}>
             <Box
                 sx={{
                     "& .super-app-theme--header": {
                         backgroundColor: "rgba(0, 181, 204, 0.55)",
                     },
-                    m:10,
+                    m:{ xs: 2, sm: 4, md: 6 },
                 }}
             >
                 <DataGrid
@@ -68,5 +70,7 @@ export default function DataTable() {
                 />
             </Box>
         </div>
+        <Footer />
+    </>
     );
 }
