@@ -45,12 +45,13 @@ const columns = [
 
 export default function DataTable() {
     return (
-        <div style={{ minWidth: "100%", height: "100%" }}>
+        <div style={{ minWidth: "100%", height: "100%"}}>
             <Box
                 sx={{
                     "& .super-app-theme--header": {
                         backgroundColor: "rgba(0, 181, 204, 0.55)",
-                    }
+                    },
+                    m:10,
                 }}
             >
                 <DataGrid
