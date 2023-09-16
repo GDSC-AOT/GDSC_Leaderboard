@@ -5,7 +5,8 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
-    "@mui/material": "latest",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.9",
     "@mui/x-data-grid": "latest",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
