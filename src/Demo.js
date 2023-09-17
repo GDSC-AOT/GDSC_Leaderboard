@@ -1,6 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridToolbarQuickFilter } from "@mui/x-data-grid";
+import LinearProgress from '@mui/material/LinearProgress';
 import data from "./response.json";
 import Footer from "./footer"
 
@@ -27,7 +28,7 @@ const columns = [
     },
     {
         field: "courses_completed",
-        headerName: "Completed Status",
+        headerName: "GCCF Status",
         type: "number",
         flex: 0.1,
         minWidth: 100,
@@ -65,7 +66,8 @@ export default function DataTable() {
                         },
                     }}
                     pageSizeOptions={[10, 20, 50]}
-                    slots={{ toolbar: GridToolbarQuickFilter }}
+                    slots={{ toolbar: GridToolbarQuickFilter, loadingOverlay: LinearProgress, }}
+                    loading={true}
                     disableColumnMenu
                 />
             </Box>
