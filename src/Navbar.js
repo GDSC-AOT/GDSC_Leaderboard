@@ -20,11 +20,11 @@ const Navbar = () => {
           </IconButton>
         </Hidden>
         <Typography variant="h6" component="div">
-          <span style={{ color: "#4285f4" }}>Google</span>{" "}
-          <span style={{ color: "#0f9d58" }}>Study</span>{" "}
-          <span style={{ color: "#f4b400" }}>Cloud</span>{" "}
-          <span style={{ color: "#db4437" }}>Jams</span>{" "}
-          <span style={{ color: "#23-24" }}>23-24</span>
+          <span style={{ color: "#4285f4" }}>G</span>{" "}
+          <span style={{ color: "#0f9d58" }}>D</span>{" "}
+          <span style={{ color: "#f4b400" }}>S</span>{" "}
+          <span style={{ color: "#db4437" }}>C</span>{" "}
+          <span style={{ color: "#000000" }}>AOT</span>
         </Typography>
       </Toolbar>
     </AppBar>

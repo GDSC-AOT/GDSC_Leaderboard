@@ -22,7 +22,10 @@ h1 {
   font-weight: 400;
   color: #222;
 }
-
+.MuiAppBar-root{
+  background: 'transparent';
+  box-shadow: 'none';
+}
 
 @media (max-width: 768px) {
 
